@@ -29,6 +29,7 @@ include_once "connection.php";
                 <th>name</th>
                 <th>email</th>
                 <th>password</th>
+                <th>action</th>
             </tr>
 
         </thead>
@@ -40,6 +41,7 @@ include_once "connection.php";
                 <td> <?php  echo  $user['name']?></td>
                 <td> <?php  echo  $user['email']  ?></td>
                 <td> <?php  echo  $user['password']  ?></td>
+                <td><a href="edit.php?id=<?php  echo  $user['id']?>">Edit</a></td>
             </tr>
             <?php
             }
