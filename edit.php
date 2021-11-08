@@ -25,6 +25,7 @@ echo $users['name'];
     <a href="users.php">go to users</a>
 
     <form action="edit_action.php" method="post">
+        <input type="hidden" name="id" value="<?php  echo  $users['id']?>">
         <input type="text" name="name" value="<?php  echo  $users['name']?>">
         <input type="text" name="email" value="<?php  echo  $users['email']?>">
         <input type="text" name="password" value="<?php  echo  $users['password']?>">
